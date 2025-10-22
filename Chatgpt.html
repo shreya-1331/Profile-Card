@@ -1,0 +1,81 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-container input[type="text"], .form-container input[type="radio"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container input[type="radio"] {
+            width: auto;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Survey Form</h1>
+        <p>User stories survey form</p>
+        
+        <form>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name">
+            
+            <!-- Email -->
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" placeholder="Enter E-mail">
+            
+            <!-- Work Experience -->
+            <label for="work-experience">Work Experience:</label>
+            <input type="text" id="work-experience" placeholder="Enter work experience">
+            
+            <!-- Comfort with Real Estate Investment -->
+            <label for="investment">Are you comfortable in investing in real estate on a platform without first investigating the property?</label>
+            <input type="text" id="investment" placeholder="Yes/No">
+            
+            <!-- Investment Choices -->
+            <label for="investment-type">You are already invested in:</label>
+            <input type="radio" value="Real Estate" name="investment-type"> Real Estate
+            <input type="radio" value="Mutual Funds" name="investment-type"> Mutual Funds
+            <input type="radio" value="Stocks & Bonds" name="investment-type"> Stocks & Bonds
+            
+            <!-- Ready for Further Contact -->
+            <label for="contact">Are you ready for further contact?</label>
+            <input type="radio" value="Yes" name="contact"> Yes
+            <input type="radio" value="No" name="contact"> No
+            
+                   </form>
+    </div>
+
+</body>
+</html>
